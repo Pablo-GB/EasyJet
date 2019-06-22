@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="67775" started-at="2019-06-22T04:13:03Z" finished-at="2019-06-22T04:14:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="67775" started-at="2019-06-22T04:13:03Z" finished-at="2019-06-22T04:14:11Z">
+      <class name="PGB.EASYJET.TC.FlightSearch">
+        <test-method status="PASS" signature="setBaseURL()[pri:0, instance:PGB.EASYJET.TC.FlightSearch@7c16905e]" name="setBaseURL" is-config="true" duration-ms="57775" started-at="2019-06-22T01:13:03Z" finished-at="2019-06-22T01:14:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBaseURL -->
+        <test-method status="PASS" signature="test()[pri:0, instance:PGB.EASYJET.TC.FlightSearch@7c16905e]" name="test" duration-ms="1058" started-at="2019-06-22T01:14:01Z" finished-at="2019-06-22T01:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:PGB.EASYJET.TC.FlightSearch@7c16905e]" name="quit" is-config="true" duration-ms="8923" started-at="2019-06-22T01:14:02Z" finished-at="2019-06-22T01:14:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- PGB.EASYJET.TC.FlightSearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
