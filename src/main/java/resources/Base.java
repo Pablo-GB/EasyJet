@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -15,6 +14,7 @@ public class Base {
 	public WebDriver driver;
 	String path="user.dir";
 	String browser;
+	String url;
 	
 	public WebDriver initialize_driver() throws IOException
 	{
@@ -22,6 +22,7 @@ public class Base {
 	fis= new FileInputStream(path+"//src//main//java//data.properties");
 	prop.load(fis);
 	browser=prop.getProperty("browser");
+	url= prop.getProperty("url");
 	
 	if(browser.equals("CHROME"))
 	{
