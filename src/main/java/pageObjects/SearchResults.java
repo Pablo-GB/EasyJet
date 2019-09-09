@@ -13,47 +13,19 @@ public class SearchResults {
 		this.driver=driver;
 	}
 	
-	By destiny= By.id("ss");
-	By checkIn= By.xpath("//div[contains(text(),'domingo, 1 de septiembre de 2019')]");
-	By checkOut= By.xpath("//div[contains(text(),'domingo, 15 de septiembre de 2019')]");
-	By adults= By.cssSelector("#group_adults");
-	By childrens= By.cssSelector("#group_children");
-	By rooms= By.cssSelector("#no_rooms");
-	By childAge= By.xpath("//select[@name='age']");
+	By destiny= By.xpath("//span[contains(text(),'Hotel Berlin, Berlin')]");
+	By title= By.xpath("//div[5]//div[2]//div[2]//div[1]//h4[1]");
 	
 	public WebElement getDestiny()
 	{
+		
 		return driver.findElement(destiny);
 	}
 	
-	public WebElement getCheckIn()
-	{
-		return driver.findElement(checkIn);
+	public WebElement getMsge()
+	{	
+		return driver.findElement(title);
 	}
-	
-	public WebElement getCheckOut()
-	{
-		return driver.findElement(checkOut);
-	}
-	
-	public WebElement getAdults()
-	{
-		return driver.findElement(adults);
-	}
-	
-	public WebElement getChildrens()
-	{
-		return driver.findElement(childrens);
-	}
-	
-	public WebElement getRooms()
-	{
-		return driver.findElement(rooms);
-	}
-	
-	public WebElement getChildAge()
-	{
-		return driver.findElement(childAge);
-	}
-	
 }
+	
+	

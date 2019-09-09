@@ -12,14 +12,14 @@ public class Base {
 	Properties prop;
 	FileInputStream fis;
 	public WebDriver driver;
-	String path="user.dir";
+	String path=System.getProperty("user.dir");
 	String browser;
 	String url;
 	
 	public WebDriver initialize_driver() throws IOException
 	{
 	prop=new Properties();
-	fis= new FileInputStream(path+"//src//main//java//data.properties");
+	fis= new FileInputStream(path+"\\src\\main\\java\\resources\\data.properties");
 	prop.load(fis);
 	browser=prop.getProperty("browser");
 	url= prop.getProperty("url");
@@ -28,7 +28,7 @@ public class Base {
 	{
 		System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
 	return driver;

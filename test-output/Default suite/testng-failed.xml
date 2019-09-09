@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="PGB.EASYJET.TC.FlightSearch">
+      <class name="cucumberOptions.TestRunner">
         <methods>
-          <include name="test"/>
-          <include name="setBaseURL"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- PGB.EASYJET.TC.FlightSearch -->
+      </class> <!-- cucumberOptions.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
